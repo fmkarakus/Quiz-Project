@@ -3,7 +3,7 @@
 
 <head>
   <meta charset='utf8'>
-  <title>your project name</title>
+  <title>Project Quiz</title>
 
   <link href="./style.css" rel="stylesheet" />
 
@@ -24,6 +24,54 @@
 </head>
 
 <body>
+<div id="container">
+  <section id="page1">
+    <div id="Rules">
+      <h3> Some Guidelines!</h3>
+      <ul>
+        <li>The game is multiple-choice-quiz</li>
+        <li>If the progress-bar is 🟢 your answer is right</li>
+        <li>If the progress-bar is 🔴 your answer is wrong</li>
+        <li> Add new question by clicking the Add question button</li>
+        <li>You can also modify a question</li>
+        <li>Try your best to not cheat</li>
+        <li>Use the resource button to research about the question</li>
+        <li>Remove the questions you find irrelevant</li>
+      </ul>
+      enjoy!
+    </div>
+    <button id="add">Add Questions</button>
+    <button id="start">Start Quiz!</button>
+  </section>
+  <div id="quiz" style="display:none;">
+    <div id="question"></div>
+    <div id="score">
+      <h3>your score is 0 </h3>
+
+    </div>
+    <div id="choices">
+      <div><input class="choice" id="1" type="radio" name='color' />a</div>
+      <div><input class="choice" id="2" type="radio" name='color' />b</div>
+      <div><input class="choice" id="3" type="radio" name='color' />c</div>
+      <div><input class="choice" id="4" type="radio" name='color'>d</div>
+    </div>
+    <button id="next">next</button>
+    <div id="display" style="display:none;">answer and link display</div>
+    <button id="show" style="display:none;">show Answer</button>
+    <div id="progress">
+      <div class="prog"></div>
+    </div>
+    <div class="multi-button">
+      <button id="modify" class="btn">Modify</button>
+      <button id="remove" class="btn">Remove</button>
+      <button id="cheat" class="btn">Cheat</button>
+      <button id="link" class="btn">Resources</button>
+    </div>
+  </div>
+
+
+</div>
+
 
 
 

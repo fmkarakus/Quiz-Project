@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
+
+
+
+body {
+    font-size: 20px;
+    font-family: cursive;
+    color: #37373cda;
+    overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-1536743939714-23ec5ac2dbae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(236, 232, 232);
+}
+
+#container {
+    margin: 30px auto;
+    background-color: #020202e7;
+    height: 500px;
+    width: 1000px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+
+}
+
+#Rules {
+    margin-left: 150px;
+}
+
+#Rules h3 {
+    margin-left: 200px;
+    padding-top: 20px;
+}
+
+#start {
+    height: 90px;
+    width: 150px;
+    background: linear-gradient(to bottom, #da9555, #cdda5569);
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin: -5px;
+    padding: 0;
+    stroke: black;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left: 800px;
+    top: 390px;
+    font-family: inherit;
+}
+
+#start:hover {
+    border: 3px solid rgb(173, 81, 58);
+    color: rgb(209, 145, 129)
+}
+
+#add {
+    height: 90px;
+    width: 150px;
+    background: linear-gradient(to bottom, #da9555, #cdda5569);
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin: -5px;
+    padding: 0;
+    stroke: black;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    top: 390px;
+    font-family: inherit;
+
+}
+
+#add:hover {
+    border: 3px solid rgb(173, 81, 58);
+    color: rgb(209, 145, 129)
+}
+
+#question {
+    width: auto;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#question p {
+    width: 990px;
+    right: 100;
+    font-size: 1.25em;
+}
+
+#score {
+    text-align: center;
+    background-color: #63625fd5;
+    height: 70px;
+    position: absolute;
+    left: 750px;
+    top: 3px;
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+
+}
+
+#choices {
+    position: absolute;
+    top: 90px;
+    padding: 5px;
+    left: 100px;
+}
+
+.choice {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+#next {
+    height: 60px;
+    width: 100px;
+    background: linear-gradient(to bottom, #da9555, #cdda5569);
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin: -5px;
+    padding: 0;
+    stroke: black;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left: 560px;
+    font-family: inherit;
+    top: 230px;
+
+}
+
+#next:hover {
+    border: 3px solid rgb(173, 81, 58);
+    color: rgb(209, 145, 129)
+}
+
+#show {
+    height: 60px;
+    width: 150px;
+    background: linear-gradient(to bottom, #da9555, #cdda5569);
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin: -5px;
+    padding: 0;
+    stroke: black;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    top: 330px;
+
+
+}
+
+#show:hover {
+    border: 3px solid rgb(173, 81, 58);
+    color: rgb(209, 145, 129)
+}
+
+#display {
+    text-align: center;
+    background-color: #7a7a77c9;
+    height: 100px;
+    position: absolute;
+    left: 350px;
+    top: 300px;
+    padding: 0 3rem;
+    border-radius: 0.5rem;
+    width: auto;
+}
+
+#progress {
+    left: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    text-align: left;
+}
+
+.prog {
+
+    background-color: #eceadac9;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.multi-button {
+    position: absolute;
+    filter: drop-shadow(3px 10px 15px rgba(0, 0, 0, 0.45));
+    top: 450px;
+    bottom: 5px;
+    left: 38rem;
+    font-family: inherit;
+
+}
+
+.multi-button button {
+    height: 50px;
+    width: 100px;
+    background: linear-gradient(to bottom, #da9555, #cdda5569);
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin: -5px;
+    padding: 0;
+    stroke: black;
+    outline: none;
+
+
+}
+
+.multi-button :nth-child(1) {
+    border-radius: 20px 0 0 20px;
+}
+
+.multi-button :nth-child(4) {
+    border-radius: 0 20px 20px 0;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.45));
+    border: 3px solid rgb(173, 81, 58);
+    color: rgb(209, 145, 129)
+}
+
+button:active {
+    filter: none;
+    transform: scale(.95);
+}
+
+#link {
+    font-family: inherit;
+    left: 53rem;
+}
+
+#cheat {
+    font-family: inherit;
+    left: 43rem;
+}
+
+#remove {
+    font-family: inherit;
+    left: 33rem;
+}
+
+#modify {
+    font-family: inherit;
+    left: 23rem;
+}

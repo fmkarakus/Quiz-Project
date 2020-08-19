@@ -25,7 +25,7 @@
 
 <body>
 <div id="container">
-  <section id="page1">
+  <section id="page1" style="display:block;">
     <div id="Rules">
       <h3> Some Guidelines!</h3>
       <ul>
@@ -68,7 +68,77 @@
       <button id="link" class="btn">Resources</button>
     </div>
   </div>
+<div id="add-page" style="display:none">
+  <form>
+    <label>Write a question</label>
+    <br>
+    <input type="text" id="add-question" name="Add">
+    <br>
+    <label>A</label>
+    <br>
+    <input type="text" id="opA" name="">
+    <br>
+    <label>B</label>
+    <br>
+    <input type="text" id="opB" name="">
+    <br>
+    <label>C</label>
+    <br>
+    <input type="text" id="opC" name="">
+    <br>
+    <label>D</label>
+    <br>
+    <input type="text" id="opD" name="">
+    <br>
+    <label for="country">Correct Answer</label><br>
+    <select id="correctA" name="">
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+      <option value="d">D</option>
+    </select>
 
+    <input type="submit" value="Add a question">
+  </form>
+</div>
+<div id="modify-page" style="display:none">
+  <form>
+    <label>Modify a question</label>
+    <br>
+    <input type="text" id="modify-question" name="Add">
+    <br>
+    <label>A</label>
+    <br>
+    <input type="text" id="opa" name="">
+    <br>
+    <label>B</label>
+    <br>
+    <input type="text" id="opb" name="">
+    <br>
+    <label>C</label>
+    <br>
+    <input type="text" id="opc" name="">
+    <br>
+    <label>D</label>
+    <br>
+    <input type="text" id="opd" name="">
+    <br>
+    <label for="country">Correct Answer</label><br>
+    <select id="correctA" name="">
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+      <option value="d">D</option>
+    </select>
+
+    <input type="submit" value="submit">
+  </form>
+</div>
+<div id="finale-page" style="display:none;">
+  <h4>You have finished the Quiz</h4>
+  <h4>Your score is ___</h4>
+  <button id="restart">restart</button>
+</div>
 
 </div>
 

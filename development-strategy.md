@@ -58,7 +58,7 @@ no changes
 
 ## 2. Display question
 
-> \_assigned to \_\_\_\_
+> _assigned to Abel_
 
 **As a site visitor, I want to see quiz question on screen**
 

@@ -46,11 +46,11 @@ const nextQuestion = () => {
   document.getElementById('display').innerHTML = '';
 
   const questionsLgt = state.questions.length;
-  for (let i = 0; i < questionsLgt; i++) {
-    if (i === questionsLgt ) {
-      document.getElementById('next').style.display = 'none';
-    }
+  
+  if (answered === questionsLgt ) { 
+    document.getElementById('next').style.display = 'none';
   }
+  
 };
 
 // write only one top-level describe in this file

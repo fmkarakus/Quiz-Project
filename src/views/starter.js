@@ -25,6 +25,20 @@ const _ = () => {
 };
 
 
+const answerIsCorrect = () => {
+  const buttons = document.getElementById("progress").children[0];
+
+  buttons.classList.add('rightAnswer');
+  buttons.classList.remove('prog');
+};
+
+const answerIsWrong = () => {
+  const buttons = document.getElementById("progress").children[0];
+
+  buttons.classList.add('wrongAnswer');
+  buttons.classList.remove('prog');
+};
+
 // write only one top-level describe in this file
 describe('_', () => {
   // write as many nested describes as you would like

@@ -197,7 +197,7 @@ no changes
 
 ## 5. Evaluation
 
-> assigned to \_\_\_\_
+> assigned to Abel
 
 **As a site visitor, I want to see whether I have answered correctly, see colors of the circles change as I answer the questions, see an option to see the correct answer if i am wrong**
 

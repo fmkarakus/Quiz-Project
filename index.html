@@ -25,7 +25,7 @@
 
 <body>
 <div id="container">
-  <section id="page1" style="display:block;">
+  <section id="page1" style="display:none;">
     <div id="Rules">
       <h3> Some Guidelines!</h3>
       <ul>
@@ -73,24 +73,15 @@
     <label>Write a question</label>
     <br>
     <input type="text" id="add-question" name="Add">
-    <br>
-    <label>A</label>
-    <br>
-    <input type="text" id="opA" name="">
-    <br>
-    <label>B</label>
-    <br>
-    <input type="text" id="opB" name="">
-    <br>
-    <label>C</label>
-    <br>
-    <input type="text" id="opC" name="">
-    <br>
-    <label>D</label>
-    <br>
-    <input type="text" id="opD" name="">
-    <br>
-    <label for="country">Correct Answer</label><br>
+    
+    <input type="text" id="opA" name="" placeholder="A"><br> 
+    <input type="text" id="opB" name=""placeholder="B"><br> 
+    <input type="text" id="opC" name=""placeholder="C"><br>
+     <input type="text" id="opD" name=""placeholder="D"><br>
+    <input type="text" id="L1" name="" placeholder="link-1"><br>
+    <input type="text" id="L2" name="" placeholder="link-2"><br>
+    
+    <label for="answer">Correct Answer</label><br>
     <select id="correctA" name="">
       <option value="a">A</option>
       <option value="b">B</option>
@@ -101,30 +92,20 @@
     <input type="submit" value="Add a question">
   </form>
 </div>
-<div id="modify-page" style="display:none">
+<div id="modify-page" style="display:block">
   <form>
     <label>Modify a question</label>
     <br>
-    <input type="text" id="modify-question" name="Add">
+    <input type="text" id="modify-question" name="Modify">
     <br>
-    <label>A</label>
-    <br>
-    <input type="text" id="opa" name="">
-    <br>
-    <label>B</label>
-    <br>
-    <input type="text" id="opb" name="">
-    <br>
-    <label>C</label>
-    <br>
-    <input type="text" id="opc" name="">
-    <br>
-    <label>D</label>
-    <br>
-    <input type="text" id="opd" name="">
-    <br>
-    <label for="country">Correct Answer</label><br>
-    <select id="correctA" name="">
+    <input type="text" id="opa" name="" placeholder="A"><br>
+    <input type="text" id="opb" name="" placeholder="B"><br>
+    <input type="text" id="opc" name="" placeholder="C"><br>
+    <input type="text" id="opd" name="" placeholder="D"><br>
+    <input type="text" id="l1" name="" placeholder="link-1"><br>
+    <input type="text" id="l2" name="" placeholder="link-2"><br>
+    <label for="answer">Correct Answer</label><br>
+    <select id="correctM" name="">
       <option value="a">A</option>
       <option value="b">B</option>
       <option value="c">C</option>

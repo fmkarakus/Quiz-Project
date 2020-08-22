@@ -26,14 +26,16 @@ const _ = () => {
 
 
 const answerIsCorrect = () => {
-  const buttons = document.getElementById("progress").children[0];
+  const order = state.answered;
+  const buttons = document.getElementById("progress").children[order];
 
   buttons.classList.add('rightAnswer');
   buttons.classList.remove('prog');
 };
 
 const answerIsWrong = () => {
-  const buttons = document.getElementById("progress").children[0];
+  const order = state.answered;
+  const buttons = document.getElementById("progress").children[order];
 
   buttons.classList.add('wrongAnswer');
   buttons.classList.remove('prog');

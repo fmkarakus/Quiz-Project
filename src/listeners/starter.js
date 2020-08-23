@@ -1,8 +1,9 @@
 'use strict';
 console.log('--- loading listener: _');
 
-document.getElementById('_')
-  .addEventListener('_', _);
+document.getElementById('start')
+  .addEventListener('click', startQuiz);
+
 
 
   document.getElementById('1')

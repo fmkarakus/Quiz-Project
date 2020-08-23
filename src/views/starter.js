@@ -25,6 +25,21 @@ const _ = () => {
 };
 
 
+const answerIsCorrect = () => {
+  const order = state.answered;
+  const buttons = document.getElementById("progress").children[order];
+
+  buttons.classList.add('rightAnswer');
+  buttons.classList.remove('prog');
+};
+
+const answerIsWrong = () => {
+  const order = state.answered;
+  const buttons = document.getElementById("progress").children[order];
+
+  buttons.classList.add('wrongAnswer');
+  buttons.classList.remove('prog');
+
 const renderQuestion = () => {
  const order = state.answered;
  const questionText = state.questions[order].text;
@@ -51,6 +66,7 @@ const nextQuestion = () => {
     document.getElementById('next').style.display = 'none';
   }
   
+
 };
 
 // write only one top-level describe in this file

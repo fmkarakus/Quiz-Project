@@ -206,6 +206,30 @@ body {
     margin-right: 5px;
 }
 
+.wrongAnswer {
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.rightAnswer {
+    background-color: green;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
 .multi-button {
     position: absolute;
     filter: drop-shadow(3px 10px 15px rgba(0, 0, 0, 0.45));

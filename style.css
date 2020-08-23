@@ -16,7 +16,7 @@ body {
 #container {
     margin: 30px auto;
     background-color: #020202e7;
-    height: 500px;
+    height: 540px;
     width: 1000px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
@@ -233,7 +233,7 @@ body {
 .multi-button {
     position: absolute;
     filter: drop-shadow(3px 10px 15px rgba(0, 0, 0, 0.45));
-    top: 450px;
+    top: 490px;
     bottom: 5px;
     left: 38rem;
     font-family: inherit;
@@ -294,4 +294,81 @@ button:active {
 #modify {
     font-family: inherit;
     left: 23rem;
+}
+#add-page {
+    height: 550px;
+    width: 1000px;
+    position: absolute;
+    padding-left: 200px;
+    top: 20px;
+}
+
+input[type=text],
+select {
+    width: 60%;
+    padding: 8px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 60%;
+    background: linear-gradient(to bottom, #da9555, #cdda5569);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#modify-page {
+    height: 550px;
+    width: 1000px;
+    position: absolute;
+    padding-left: 200px;
+    top: 20px;
+}
+
+#finale-page {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left:250px;
+    top: 100px;
+    background-color: #eceadac9;
+    font-family: inherit;
+    color: white;
+    border-radius: 5px;
+
+}
+
+#finale-page h4 {
+    margin-left: 80px;
+}
+
+#finale-page button {
+    top: 200px;
+    position: absolute;
+    left: 200px;
+    height: 60px;
+    width: 100px;
+    background: linear-gradient(to bottom, #da9555, #cdda5569);
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin: -5px;
+    padding: 0;
+    stroke: black;
+    outline: none;
 }

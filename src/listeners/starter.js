@@ -4,6 +4,7 @@ console.log('--- loading listener: _');
 document.getElementById('_')
   .addEventListener('_', _);
 
+
   document.getElementById('1')
   .addEventListener('click', checkAnswer);
 
@@ -15,3 +16,7 @@ document.getElementById('_')
 
   document.getElementById('4')
   .addEventListener('click', checkAnswer);
+
+document.getElementById('next')
+  .addEventListener('click', nextQuestion);
+

@@ -39,6 +39,34 @@ const answerIsWrong = () => {
 
   buttons.classList.add('wrongAnswer');
   buttons.classList.remove('prog');
+
+const renderQuestion = () => {
+ const order = state.answered;
+ const questionText = state.questions[order].text;
+ const answersLgt = state.questions[order].answers.length;
+
+ document.getElementById('question').innerHTML = questionText;
+
+  for (let i = 0; i < answersLgt; i++) {
+    const choice = state.questions[order].answers[i];
+    const choiceID = i + 1;
+    document.getElementById(choiceID).innerHTML = choice;
+  }
+ 
+};
+
+const nextQuestion = () => {
+  answered += 1;
+  renderQuestion()
+  document.getElementById('display').innerHTML = '';
+
+  const questionsLgt = state.questions.length;
+  
+  if (answered === questionsLgt ) { 
+    document.getElementById('next').style.display = 'none';
+  }
+  
+
 };
 
 // write only one top-level describe in this file

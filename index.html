@@ -25,7 +25,7 @@
 
 <body>
 <div id="container">
-  <section id="page1">
+  <section id="page1" style="display:block;">
     <div id="Rules">
       <h3> Some Guidelines!</h3>
       <ul>
@@ -65,7 +65,58 @@
       <button id="link" class="btn">Resources</button>
     </div>
   </div>
+<div id="add-page" style="display:none">
+  <form>
+    <label>Write a question</label>
+    <br>
+    <input type="text" id="add-question" name="Add">
+    
+    <input type="text" id="opA" name="" placeholder="A"><br> 
+    <input type="text" id="opB" name=""placeholder="B"><br> 
+    <input type="text" id="opC" name=""placeholder="C"><br>
+     <input type="text" id="opD" name=""placeholder="D"><br>
+    <input type="text" id="L1" name="" placeholder="link-1"><br>
+    <input type="text" id="L2" name="" placeholder="link-2"><br>
+    
+    <label for="answer">Correct Answer</label><br>
+    <select id="correctA" name="">
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+      <option value="d">D</option>
+    </select>
 
+    <input type="submit" value="Add a question">
+  </form>
+</div>
+<div id="modify-page" style="display:none;">
+  <form>
+    <label>Modify a question</label>
+    <br>
+    <input type="text" id="modify-question" name="Modify">
+    <br>
+    <input type="text" id="opa" name="" placeholder="A"><br>
+    <input type="text" id="opb" name="" placeholder="B"><br>
+    <input type="text" id="opc" name="" placeholder="C"><br>
+    <input type="text" id="opd" name="" placeholder="D"><br>
+    <input type="text" id="l1" name="" placeholder="link-1"><br>
+    <input type="text" id="l2" name="" placeholder="link-2"><br>
+    <label for="answer">Correct Answer</label><br>
+    <select id="correctM" name="">
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+      <option value="d">D</option>
+    </select>
+
+    <input type="submit" value="submit">
+  </form>
+</div>
+<div id="finale-page" style="display:none;">
+  <h4>You have finished the Quiz</h4>
+  <h4>Your score is ___</h4>
+  <button id="restart">restart</button>
+</div>
 
 </div>
 
@@ -74,6 +125,8 @@
   <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
   <script src='./lib/review-buttons.js'></script>
+  
+  <script src='./src/listeners/starter.js '></script>
 
 </body>
 

@@ -372,3 +372,17 @@ input[type=submit]:hover {
     stroke: black;
     outline: none;
 }
+.dot1 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(4, 122, 4);
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot2 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(243, 28, 28);
+    border-radius: 50%;
+    display: inline-block;
+}

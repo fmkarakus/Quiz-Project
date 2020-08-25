@@ -27,6 +27,7 @@ const answerIsCorrect = () => {
 
   buttons.classList.add("rightAnswer");
   buttons.classList.remove("prog");
+  buttons.classList.remove("wrongAnswer");
 };
 
 const answerIsWrong = () => {
@@ -35,8 +36,10 @@ const answerIsWrong = () => {
 
   buttons.classList.add("wrongAnswer");
   buttons.classList.remove("prog");
+  buttons.classList.remove("rightAnswer");
 };
 const renderQuestion = () => {
+  debugger;
   const order = state.answered;
   const questionText = state.questions[order].text;
   const answersLgt = state.questions[order].answers.length;
@@ -46,18 +49,21 @@ const renderQuestion = () => {
   for (let i = 0; i < answersLgt; i++) {
     const choice = state.questions[order].answers[i];
     const choiceID = i + 1;
-    document.getElementById(choiceID).innerHTML = choice;
+    let choices = document.getElementById("choices");
+    choices.children[i].childNodes[2].nodeValue = choice;
   }
 };
 
 const nextQuestion = () => {
-  answered += 1;
+  debugger;
+  state.answered += 1;
   renderQuestion();
   document.getElementById("display").innerHTML = "";
-
+  document.getElementById("display").style.display = "none";
+  document.getElementById("show").style.display = "none";
   const questionsLgt = state.questions.length;
 
-  if (answered === questionsLgt) {
+  if (state.answered === questionsLgt - 1) {
     document.getElementById("next").style.display = "none";
   }
 };

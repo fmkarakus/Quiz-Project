@@ -50,7 +50,7 @@ const renderQuestion = () => {
     const choice = state.questions[order].answers[i];
     const choiceID = i + 1;
     let choices = document.getElementById("choices");
-    choices.children[i].childNodes[2].nodeValue = choice;
+    choices.children[i].childNodes[1].nodeValue = choice;
   }
 };
 

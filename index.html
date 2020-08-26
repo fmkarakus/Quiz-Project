@@ -20,7 +20,7 @@
     <script src="./src/init.js"></script>
     <script src="./src/logic/starter.js"></script>
     <script src="./src/views/progressRender.js"></script>
-    <scripts src="./src/handlers/add-question.js"></script>
+    <script src="./src/handlers/add-question.js"></script>
     <script src="./src/handlers/add.js"></script>
     <script src="./src/handlers/starter.js"></script>
     <script src="./src/views/starter.js"></script>
@@ -73,7 +73,7 @@
             <form>
                 <label>Write a question</label>
                 <br>
-                <input type="text" id="add-question" name="Add">
+                <input type="text" id="q" name="Add">
 
                 <input type="text" id="opA" name="" placeholder="A"><br>
                 <input type="text" id="opB" name="" placeholder="B"><br>
@@ -90,7 +90,7 @@
                     <option value="d">D</option>
                 </select>
 
-                <input type="submit" value="Add a question" />
+                <input type="submit" value="Add a question" id="user-action" />
             </form>
         </div>
         <div id="modify-page" style="display: none;">

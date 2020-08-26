@@ -6,6 +6,8 @@ document.getElementById('start')
 document.getElementById('add').addEventListener('click', addQuestionRender);
   document.getElementById('user-action').addEventListener('click', addQuestions);
 
+document.getElementById('next')
+  .addEventListener('click', nextQuestion);
 
 
   document.getElementById('1')
@@ -19,9 +21,6 @@ document.getElementById('add').addEventListener('click', addQuestionRender);
 
   document.getElementById('4')
   .addEventListener('click', checkAnswer);
-
-document.getElementById('next')
-  .addEventListener('click', nextQuestion);
 
 
 

@@ -50,7 +50,7 @@ const renderQuestion = () => {
     const choice = state.questions[order].answers[i];
     const choiceID = i + 1;
     let choices = document.getElementById("choices");
-    choices.children[i].childNodes[2].nodeValue = choice;
+    choices.children[i].childNodes[1].nodeValue = choice;
   }
 };
 
@@ -65,6 +65,8 @@ const nextQuestion = () => {
 
   if (state.answered === questionsLgt - 1) {
     document.getElementById("next").style.display = "none";
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById('finale-page').style.display = 'block';
   }
 };
 

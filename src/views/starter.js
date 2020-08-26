@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /* View Functions
 
@@ -11,70 +11,69 @@
 
 */
 
-console.log('--- loading view: _');
+console.log("--- loading view: _");
 
 // either expect or assert, up to you
-const _ = chai._;
+// const _ = chai._;
 
-
-/**
- *
- */
-const _ = () => {
-
-};
-
+// /**
+//  *
+//  */
+// const _ = () => {};
 
 const answerIsCorrect = () => {
   const order = state.answered;
   const buttons = document.getElementById("progress").children[order];
 
-  buttons.classList.add('rightAnswer');
-  buttons.classList.remove('prog');
+  buttons.classList.add("rightAnswer");
+  buttons.classList.remove("prog");
+  buttons.classList.remove("wrongAnswer");
 };
 
 const answerIsWrong = () => {
   const order = state.answered;
   const buttons = document.getElementById("progress").children[order];
 
-  buttons.classList.add('wrongAnswer');
-  buttons.classList.remove('prog');
-
+  buttons.classList.add("wrongAnswer");
+  buttons.classList.remove("prog");
+  buttons.classList.remove("rightAnswer");
+};
 const renderQuestion = () => {
- const order = state.answered;
- const questionText = state.questions[order].text;
- const answersLgt = state.questions[order].answers.length;
+  debugger;
+  const order = state.answered;
+  const questionText = state.questions[order].text;
+  const answersLgt = state.questions[order].answers.length;
 
- document.getElementById('question').innerHTML = questionText;
+  document.getElementById("question").innerHTML = questionText;
 
   for (let i = 0; i < answersLgt; i++) {
     const choice = state.questions[order].answers[i];
     const choiceID = i + 1;
-    document.getElementById(choiceID).innerHTML = choice;
+    let choices = document.getElementById("choices");
+    choices.children[i].childNodes[2].nodeValue = choice;
   }
- 
 };
 
 const nextQuestion = () => {
-  answered += 1;
-  renderQuestion()
-  document.getElementById('display').innerHTML = '';
-
+  debugger;
+  state.answered += 1;
+  renderQuestion();
+  document.getElementById("display").innerHTML = "";
+  document.getElementById("display").style.display = "none";
+  document.getElementById("show").style.display = "none";
   const questionsLgt = state.questions.length;
-  
-  if (answered === questionsLgt ) { 
-    document.getElementById('next').style.display = 'none';
-  }
-  
 
+  if (state.answered === questionsLgt - 1) {
+    document.getElementById("next").style.display = "none";
+  }
 };
 
 // write only one top-level describe in this file
-describe('_', () => {
+describe("_", () => {
   // write as many nested describes as you would like
-  describe('_', () => {
+  describe("_", () => {
     // write as many it's as you want in each describe
-    it('_', () => {
+    it("_", () => {
       // have only one assertion inside each it
     });
   });

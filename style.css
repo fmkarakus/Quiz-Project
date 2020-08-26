@@ -1,362 +1,346 @@
-@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
-
-
+@import url("https://fonts.googleapis.com/css?family=Walter+Turncoat");
 
 body {
-    font-size: 20px;
-    font-family: cursive;
-    color: #37373cda;
-    overflow: hidden;
-    background-image: url('https://images.unsplash.com/photo-1536743939714-23ec5ac2dbae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: rgb(236, 232, 232);
+  font-size: 20px;
+  font-family: cursive;
+  color: #37373cda;
+  overflow: hidden;
+  background-image: url("https://images.unsplash.com/photo-1536743939714-23ec5ac2dbae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(236, 232, 232);
 }
 
 #container {
-    margin: 30px auto;
-    background-color: #020202e7;
-    height: 540px;
-    width: 1000px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 15px 0px;
-    position: relative;
-
+  margin: 30px auto;
+  background-color: #020202e7;
+  height: 540px;
+  width: 1000px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px;
+  position: relative;
 }
 
 #Rules {
-    margin-left: 150px;
+  margin-left: 150px;
 }
 
 #Rules h3 {
-    margin-left: 200px;
-    padding-top: 20px;
+  margin-left: 200px;
+  padding-top: 20px;
 }
 
 #start {
-    height: 90px;
-    width: 150px;
-    background: linear-gradient(to bottom, #da9555, #cdda5569);
-    font-weight: bold;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    margin: -5px;
-    padding: 0;
-    stroke: black;
-    outline: none;
-    cursor: pointer;
-    position: absolute;
-    left: 800px;
-    top: 390px;
-    font-family: inherit;
+  height: 90px;
+  width: 150px;
+  background: linear-gradient(to bottom, #da9555, #cdda5569);
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  margin: -5px;
+  padding: 0;
+  stroke: black;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 800px;
+  top: 390px;
+  font-family: inherit;
 }
 
 #start:hover {
-    border: 3px solid rgb(173, 81, 58);
-    color: rgb(209, 145, 129)
+  border: 3px solid rgb(173, 81, 58);
+  color: rgb(209, 145, 129);
 }
 
 #add {
-    height: 90px;
-    width: 150px;
-    background: linear-gradient(to bottom, #da9555, #cdda5569);
-    font-weight: bold;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    margin: -5px;
-    padding: 0;
-    stroke: black;
-    outline: none;
-    cursor: pointer;
-    position: absolute;
-    left: 30px;
-    top: 390px;
-    font-family: inherit;
-
+  height: 90px;
+  width: 150px;
+  background: linear-gradient(to bottom, #da9555, #cdda5569);
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  margin: -5px;
+  padding: 0;
+  stroke: black;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 30px;
+  top: 390px;
+  font-family: inherit;
 }
 
 #add:hover {
-    border: 3px solid rgb(173, 81, 58);
-    color: rgb(209, 145, 129)
+  border: 3px solid rgb(173, 81, 58);
+  color: rgb(209, 145, 129);
 }
 
 #question {
-    width: auto;
-    height: 400px;
-    position: absolute;
-    right: 0;
-    top: 0;
+  width: auto;
+  height: 400px;
+  position: absolute;
+  top: 45px;
+  left: 80px;
 }
 
 #question p {
-    width: 990px;
-    right: 100;
-    font-size: 1.25em;
+  width: 990px;
+  right: 100;
+  font-size: 1.25em;
 }
 
 #score {
-    text-align: center;
-    background-color: #63625fd5;
-    height: 70px;
-    position: absolute;
-    left: 750px;
-    top: 3px;
-    padding: 0 2rem;
-    border-radius: 0.5rem;
-
+  text-align: center;
+  background-color: #63625fd5;
+  height: 70px;
+  position: absolute;
+  left: 750px;
+  top: 100px;
+  padding: 0 2rem;
+  border-radius: 0.5rem;
 }
 
 #choices {
-    position: absolute;
-    top: 90px;
-    padding: 5px;
-    left: 100px;
+  position: absolute;
+  top: 90px;
+  padding: 5px;
+  left: 100px;
 }
 
 .choice {
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
 }
 
-
 #next {
-    height: 60px;
-    width: 100px;
-    background: linear-gradient(to bottom, #da9555, #cdda5569);
-    font-weight: bold;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    margin: -5px;
-    padding: 0;
-    stroke: black;
-    outline: none;
-    cursor: pointer;
-    position: absolute;
-    left: 560px;
-    font-family: inherit;
-    top: 230px;
-
+  height: 60px;
+  width: 100px;
+  background: linear-gradient(to bottom, #da9555, #cdda5569);
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  margin: -5px;
+  padding: 0;
+  stroke: black;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 560px;
+  font-family: inherit;
+  top: 230px;
 }
 
 #next:hover {
-    border: 3px solid rgb(173, 81, 58);
-    color: rgb(209, 145, 129)
+  border: 3px solid rgb(173, 81, 58);
+  color: rgb(209, 145, 129);
 }
 
 #show {
-    height: 60px;
-    width: 150px;
-    background: linear-gradient(to bottom, #da9555, #cdda5569);
-    font-weight: bold;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    margin: -5px;
-    padding: 0;
-    stroke: black;
-    outline: none;
-    cursor: pointer;
-    position: absolute;
-    left: 30px;
-    top: 330px;
-
-
+  height: 60px;
+  width: 150px;
+  background: linear-gradient(to bottom, #da9555, #cdda5569);
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  margin: -5px;
+  padding: 0;
+  stroke: black;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 30px;
+  top: 330px;
 }
 
 #show:hover {
-    border: 3px solid rgb(173, 81, 58);
-    color: rgb(209, 145, 129)
+  border: 3px solid rgb(173, 81, 58);
+  color: rgb(209, 145, 129);
 }
 
 #display {
-    text-align: center;
-    background-color: #7a7a77c9;
-    height: 100px;
-    position: absolute;
-    left: 350px;
-    top: 300px;
-    padding: 0 3rem;
-    border-radius: 0.5rem;
-    width: auto;
+  text-align: center;
+  background-color: #7a7a77c9;
+  height: 100px;
+  position: absolute;
+  left: 350px;
+  top: 300px;
+  padding: 0 3rem;
+  border-radius: 0.5rem;
+  width: auto;
 }
 
 #progress {
-    left: 30px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    padding: 5px;
-    text-align: left;
+  left: 30px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  text-align: left;
 }
 
 .prog {
-
-    background-color: #eceadac9;
-    width: 25px;
-    height: 25px;
-    border: 1px solid #000;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 5px;
-    margin-right: 5px;
+  background-color: #eceadac9;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .wrongAnswer {
-    background-color: red;
-    width: 25px;
-    height: 25px;
-    border: 1px solid #000;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 5px;
-    margin-right: 5px;
-
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .rightAnswer {
-    background-color: green;
-    width: 25px;
-    height: 25px;
-    border: 1px solid #000;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 5px;
-    margin-right: 5px;
-
+  background-color: green;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .multi-button {
-    position: absolute;
-    filter: drop-shadow(3px 10px 15px rgba(0, 0, 0, 0.45));
-    top: 490px;
-    bottom: 5px;
-    left: 38rem;
-    font-family: inherit;
-
+  position: absolute;
+  filter: drop-shadow(3px 10px 15px rgba(0, 0, 0, 0.45));
+  top: 490px;
+  bottom: 5px;
+  left: 38rem;
+  font-family: inherit;
 }
 
 .multi-button button {
-    height: 50px;
-    width: 100px;
-    background: linear-gradient(to bottom, #da9555, #cdda5569);
-    font-weight: bold;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    margin: -5px;
-    padding: 0;
-    stroke: black;
-    outline: none;
-
-
+  height: 50px;
+  width: 100px;
+  background: linear-gradient(to bottom, #da9555, #cdda5569);
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  margin: -5px;
+  padding: 0;
+  stroke: black;
+  outline: none;
 }
 
 .multi-button :nth-child(1) {
-    border-radius: 20px 0 0 20px;
+  border-radius: 20px 0 0 20px;
 }
 
 .multi-button :nth-child(4) {
-    border-radius: 0 20px 20px 0;
+  border-radius: 0 20px 20px 0;
 }
 
 button:hover {
-    cursor: pointer;
-    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.45));
-    border: 3px solid rgb(173, 81, 58);
-    color: rgb(209, 145, 129)
+  cursor: pointer;
+  filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.45));
+  border: 3px solid rgb(173, 81, 58);
+  color: rgb(209, 145, 129);
 }
 
 button:active {
-    filter: none;
-    transform: scale(.95);
+  filter: none;
+  transform: scale(0.95);
 }
 
 #link {
-    font-family: inherit;
-    left: 53rem;
+  font-family: inherit;
+  left: 53rem;
 }
 
 #cheat {
-    font-family: inherit;
-    left: 43rem;
+  font-family: inherit;
+  left: 43rem;
 }
 
 #remove {
-    font-family: inherit;
-    left: 33rem;
+  font-family: inherit;
+  left: 33rem;
 }
 
 #modify {
-    font-family: inherit;
-    left: 23rem;
+  font-family: inherit;
+  left: 23rem;
 }
 #add-page {
-    height: 550px;
-    width: 1000px;
-    position: absolute;
-    padding-left: 200px;
-    top: 20px;
+  height: 550px;
+  width: 1000px;
+  position: absolute;
+  padding-left: 200px;
+  top: 20px;
 }
 
-input[type=text],
+input[type="text"],
 select {
-    width: 60%;
-    padding: 8px 10px;
-    margin: 4px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 60%;
+  padding: 8px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-input[type=submit] {
-    width: 60%;
-    background: linear-gradient(to bottom, #da9555, #cdda5569);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
+input[type="submit"] {
+  width: 60%;
+  background: linear-gradient(to bottom, #da9555, #cdda5569);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
 #modify-page {
-    height: 550px;
-    width: 1000px;
-    position: absolute;
-    padding-left: 200px;
-    top: 20px;
+  height: 550px;
+  width: 1000px;
+  position: absolute;
+  padding-left: 200px;
+  top: 20px;
 }
 
 #finale-page {
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    left:250px;
-    top: 100px;
-    background-color: #eceadac9;
-    font-family: inherit;
-    color: white;
-    border-radius: 5px;
-
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 250px;
+  top: 100px;
+  background-color: #eceadac9;
+  font-family: inherit;
+  color: white;
+  border-radius: 5px;
 }
 
 #finale-page h4 {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 #finale-page button {
+
     top: 200px;
     position: absolute;
     left: 200px;
@@ -385,4 +369,5 @@ input[type=submit]:hover {
     background-color: rgb(243, 28, 28);
     border-radius: 50%;
     display: inline-block;
+
 }

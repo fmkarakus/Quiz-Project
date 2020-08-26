@@ -1,28 +1,34 @@
-'use strict';
+"use strict";
 
-console.log('--- loading handler: _');
+console.log("--- loading handler: _");
 
-const _ = (event) => {
-
-};
+const _ = (event) => {};
 
 const checkAnswer = (event) => {
+  debugger;
   const button = event.target;
   const buttonVal = parseInt(button.value);
   const order = state.answered;
-  const correctAnswer = state.correct;
+  let correctAnswer = state.correct;
   const rightAnswer = state.questions[order].correct;
-  
-  if ((buttonVal - 1) === rightAnswer) {
-    document.getElementById('display').innerHTML = 'Correct!';
+
+  if (buttonVal - 1 === rightAnswer) {
+    document.getElementById("display").innerHTML = "Correct!";
+    document.getElementById("display").style.display = "block";
     answerIsCorrect();
     correctAnswer += 1;
-    document.getElementById('score').innerHTML = `<h3>your score is ${correctAnswer}</h3>`
+    state.correct += 1;
+    document.getElementById(
+      "score"
+    ).innerHTML = `<h3>your score is ${correctAnswer}</h3>`;
   } else {
-    document.getElementById('display').innerHTML = 'Answer is wrong';
-    document.getElementById('show').style.display = 'block';
+    document.getElementById("display").innerHTML = "Answer is wrong";
+    document.getElementById("display").style.display = "block";
+    document.getElementById("show").style.display = "block";
     answerIsWrong();
-    document.getElementById('score').innerHTML = `<h3>your score is ${correctAnswer}</h3>`
+    document.getElementById(
+      "score"
+    ).innerHTML = `<h3>your score is ${correctAnswer}</h3>`;
   }
 };
 

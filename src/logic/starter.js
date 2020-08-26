@@ -8,8 +8,17 @@ const _ = chai._;
 /**
  *
  */
-const _ = () => {
+const addQuestion = (text, a1, a2, a3, a4, correctAnswer, link1, link2) => {
 
+  let newObject = {};
+  newObject.text = text;
+  newObject.answers = [a1, a2, a3, a4, ];
+  newObject.correct = Number(correctAnswer);
+  newObject.link = [{
+    link1,
+    link2
+  }];
+  return newObject;
 };
 
 

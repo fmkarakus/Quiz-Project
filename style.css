@@ -340,18 +340,34 @@ input[type="submit"]:hover {
 }
 
 #finale-page button {
-  top: 200px;
-  position: absolute;
-  left: 200px;
-  height: 60px;
-  width: 100px;
-  background: linear-gradient(to bottom, #da9555, #cdda5569);
-  font-weight: bold;
-  color: white;
-  font-size: 1.2rem;
-  border: none;
-  margin: -5px;
-  padding: 0;
-  stroke: black;
-  outline: none;
+
+    top: 200px;
+    position: absolute;
+    left: 200px;
+    height: 60px;
+    width: 100px;
+    background: linear-gradient(to bottom, #da9555, #cdda5569);
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin: -5px;
+    padding: 0;
+    stroke: black;
+    outline: none;
+}
+.dot1 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(4, 122, 4);
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot2 {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(243, 28, 28);
+    border-radius: 50%;
+    display: inline-block;
+
 }

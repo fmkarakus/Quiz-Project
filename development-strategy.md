@@ -389,30 +389,29 @@ no changes
 
 ---
 
-## 9. Add/delete question
+## 9. Add question
 
-> assigned to \_\_\_\_
+> assigned to Gelila
 
-**As a site visitor, I want to be able to add or delete a question**
+**As a site visitor, I want to be able to add  a question**
 
 ### Repository
 
-- developed on a branch called `add-delete-question`
+- developed on a branch called `add-question`
 
 ### Handler
 
 - create a function called `addQuestion` that adds an element to the 'questions' array
-- create a function called `removeQuestion` that deletes an element from the 'questions' array
 
 ### listener
 
 - A `click` event with handler `addQuestionRender` is added to `add` button
-- A `click` event with handler `removeQuestion` is added to `remove` button
+
 - A `click` event with handler `addQuestion` is added to `submit` button
 
 ### logic
 
-- Nothing has changed
+- create a function that renders the incoming input as an object
 
 ### views
 
@@ -426,8 +425,7 @@ no changes
 
 ### log
 
-- Nothing has changed
-
+- deep clone state to log
 ### HTML
 
 - Nothing has changed
@@ -488,7 +486,7 @@ no changes
 
 ## 11. Documentation
 
-> assigned to \_\_\_\_
+> assigned to  Fatih and Gelila perspectively 
 
 **As a site visitor, I want to see a written development strategy file and a README file**
 

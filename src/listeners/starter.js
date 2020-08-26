@@ -3,6 +3,8 @@ console.log('--- loading listener: _');
 
 document.getElementById('start')
   .addEventListener('click', startQuiz);
+document.getElementById('add').addEventListener('click', addQuestionRender);
+  document.getElementById('user-action').addEventListener('click', addQuestions);
 
 
 
@@ -20,4 +22,7 @@ document.getElementById('start')
 
 document.getElementById('next')
   .addEventListener('click', nextQuestion);
+
+
+
 

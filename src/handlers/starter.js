@@ -2,8 +2,6 @@
 
 console.log("--- loading handler: _");
 
-const _ = (event) => {};
-
 const checkAnswer = (event) => {
   debugger;
   const button = event.target;

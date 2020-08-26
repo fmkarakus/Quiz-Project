@@ -1,12 +1,3 @@
-function addQuestionRender(){
-    debugger;
-    const page1 = document.getElementById("page1");
-    const add = document.getElementById('add-page');
-
-    page1.style.display = "none";
-    add.style.display = "block";
-}
-
 
 
 function addQuestions() {

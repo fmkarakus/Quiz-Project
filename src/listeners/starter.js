@@ -20,3 +20,8 @@ document.getElementById("2").addEventListener("click", checkAnswer);
 document.getElementById("3").addEventListener("click", checkAnswer);
 
 document.getElementById("4").addEventListener("click", checkAnswer);
+
+
+document.getElementById("show").addEventListener("click", displaySolution);
+document.getElementById("cheat").addEventListener("click", displaySolution);
+document.getElementById("restart").addEventListener("click", restart);

@@ -65,8 +65,7 @@ const nextQuestion = () => {
 
   if (state.answered === questionsLgt - 1) {
     document.getElementById("next").style.display = "none";
-    document.getElementById("quiz").style.display = "none";
-    document.getElementById('finale-page').style.display = 'block';
+    document.getElementById("showResult").style.display = "block";
   }
 };
 

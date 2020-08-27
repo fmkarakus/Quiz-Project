@@ -22,10 +22,12 @@ const restart = (e) =>{
        last.style.display = 'none';
 
    }
-    
-
-
-
-
-    
 }
+
+const displaySources = () => {
+    
+    let q = state.questions[state.answered];
+    const display = document.getElementById('display');
+    display.style.display = 'block';
+    display.innerHTML = `Go here - ${q.links[0].href} or ${q.links[1].href}`;
+    };

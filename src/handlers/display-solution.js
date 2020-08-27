@@ -8,6 +8,10 @@ const displaySolution = () => {
      display.style.display = 'block';
      display.innerHTML = '<p> your correct answer is option No.' + Number(rightAnswer + 1);
      buttons.classList.add("wrongAnswer");
+     var radios = document.getElementsByName('color');
+     for (var i = 0; i < radios.length; i++) {
+         radios[i].disabled = true;
+     }
 }
 
 const restart = (e) =>{

@@ -30,3 +30,49 @@ function addQuestions() {
     });
     console.log(log);
 };
+
+
+
+function removeQuestion() {
+    debugger;
+
+
+    const q = document.getElementById("question");
+    const t = 'none';
+    const choices = document.getElementById("choices");
+    const buttons = document.getElementById("progress").lastChild;
+
+    swal({
+            title: "Are you sure?",
+            text: "Is it really irrelevant question?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+        .then((willDelete) => {
+            if (willDelete) {
+                swal("Poof! The question has been deleted!", {
+                    icon: "success",
+                });
+                
+                choices.children[0].childNodes[2].nodeValue = t;
+                choices.children[1].childNodes[2].nodeValue = t;
+                choices.children[2].childNodes[2].nodeValue = t;
+                choices.children[3].childNodes[2].nodeValue = t;
+                q.innerHTML = '<p><b>This question has been Removed</b></p>';
+                buttons.classList.remove("prog");
+
+
+            } else {
+                swal(" you are right it deserves one more look!");
+            }
+        });
+
+
+
+
+
+}
+
+/*
+*/

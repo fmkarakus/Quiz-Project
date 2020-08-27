@@ -26,3 +26,4 @@ document.getElementById("show").addEventListener("click", displaySolution);
 document.getElementById("cheat").addEventListener("click", displaySolution);
 document.getElementById("restart").addEventListener("click", restart);
 document.getElementById("link").addEventListener("click", displaySources);
+document.getElementById("remove").addEventListener("click", removeQuestion);

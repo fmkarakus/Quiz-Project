@@ -9,6 +9,12 @@ const checkAnswer = (event) => {
   const order = state.answered;
   let correctAnswer = state.correct;
   const rightAnswer = state.questions[order].correct;
+  var inputRadios = document.getElementsByName('color');
+  if (button.checked === true) {
+    for (var i = 0; i < inputRadios.length; i++) {
+      inputRadios[i].disabled = true;
+    }
+  }
 
   if (buttonVal - 1 === rightAnswer) {
     document.getElementById("display").innerHTML = "Correct!";

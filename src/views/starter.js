@@ -56,6 +56,10 @@ const renderQuestion = () => {
 
 const nextQuestion = () => {
   debugger;
+  var radios = document.getElementsByName('color');
+  for (var i = 0; i < radios.length; i++) {
+    radios[i].disabled = false;
+  }
   state.answered += 1;
   renderQuestion();
   document.getElementById("display").innerHTML = "";

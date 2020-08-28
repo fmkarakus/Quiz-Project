@@ -59,6 +59,7 @@ const nextQuestion = () => {
   var radios = document.getElementsByName('color');
   for (var i = 0; i < radios.length; i++) {
     radios[i].disabled = false;
+    radios[i].checked = false;
   }
   state.answered += 1;
   renderQuestion();
